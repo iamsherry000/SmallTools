@@ -1,0 +1,11 @@
+# Squeez 工具依賴套件
+# Python 3.7+ 需求
+
+# 標準函式庫已足夠，無需額外套件
+# 本專案使用的都是 Python 標準函式庫：
+# - os
+# - shutil
+# - zipfile
+# - argparse
+# - pathlib
+
