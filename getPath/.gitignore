@@ -1,0 +1,19 @@
+# PyInstaller 建置檔案
+build/
+*.spec
+warn-*.txt
+xref-*.html
+
+# Python 快取檔案
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# IDE 設定
+.vscode/
+.idea/
+*.swp
+*.swo
+

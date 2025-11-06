@@ -6,12 +6,15 @@
 
 ## 使用方式
 
-### 基本使用
+### 方式 1: 使用 .exe 檔案（推薦）
+直接執行 `dist/GetPath.exe`，無需安裝 Python。
+
+### 方式 2: 使用 Python 腳本
 ```bash
 python src/getPath.py
 ```
 
-### 作為模組使用
+### 方式 3: 作為模組使用
 ```python
 from src.getPath import extract_path_from_sharepoint_url
 
@@ -19,6 +22,20 @@ url = "https://hp.sharepoint.com/sites/BPSsecurityValidationlab/..."
 clean_path = extract_path_from_sharepoint_url(url)
 print(clean_path)
 ```
+
+## 建置 .exe 檔案
+
+如果需要重新建置 .exe 檔案：
+
+```bash
+# 安裝建置工具
+pip install -r requirements.txt
+
+# 執行建置腳本
+python build_exe.py
+```
+
+建置完成後，.exe 檔案會在 `dist/GetPath.exe`
 
 ## 範例
 
@@ -33,5 +50,11 @@ SVL Files/Test Tools and Documents/Intel Tools/Intel BLDT/bldt-nda_setup-2.7.0.z
 ```
 
 ## 系統需求
+
+### 使用 .exe 檔案
+- Windows 作業系統
+- 無需安裝 Python
+
+### 使用 Python 腳本
 - Python 3.6 或以上版本
 - 無需額外安裝套件（使用標準函式庫）
